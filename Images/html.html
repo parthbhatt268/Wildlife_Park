@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/layout2.css">
+<title>Layout</title>
+</head>
+<body>
+
+<div class="container">
+<header>
+<h2>Welcome</h2>
+<h3>To my world...</h3>
+</header>
+
+<nav>
+<input type="checkbox" id="hamburgerCheck">
+<label for="hamburgerCheck" class="hamburger">&#9776</label>
+<ul>
+<li><a href="">button 1</a></li>
+<li><a href="">button 2</a></li>
+<li><a href="">button 3</a></li>
+<li><a href="">button 4</a></li>
+<li><a href="">button 5</a></li>
+</ul>
+</nav>
+<footer>
+<h2>Contact Details Here</h2>
+</footer>
+<div class="album">
+
+<div class="card">
+<div class="cardImage">
+<img src="images/mushroom3.webp" alt="mushroom">
+</div>
+<div class="cardText">
+<ul>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, asperiores.</li>
+<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+</ul>
+</div>
+<div class="cardFooter">
+<h2>€200</h2>
+</div>
+</div>
+
+<div class="card">
+<div class="cardImage">
+<img src="images/mushroom4.webp" alt="mushroom">
+</div>
+<div class="cardText">
+<ul>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Lorem ipsum dolor sit amet consectetur.</li>
+<li>Velit expedita iure explicabo unde autem!</li>
+<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, asperiores.</li>
+</ul>
+</div>
+<div class="cardFooter">
+<h2>€200</h2>
+</div>
+</div>
+<div class="card">
+<div class="cardImage">
+<img src="images/mushroom5.webp" alt="mushroom">
+</div>
+<div class="cardText">
+<ul>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, asperiores.</li>
+</ul>
+</div>
+<div class="cardFooter">
+<h2>€200</h2>
+</div>
+</div>
+
+<div class="card">
+<div class="cardImage">
+<img src="images/mushroom1.webp" alt="mushroom">
+</div>
+<div class="cardText">
+<ul>
+<li>Lorem ipsum dolor sit amet.</li>
+</ul>
+</div>
+<div class="cardFooter">
+<h2>€200</h2>
+</div>
+</div>
+
+<div class="card">
+<div class="cardImage">
+<img src="images/mushroom2.webp" alt="mushroom">
+</div>
+<div class="cardText">
+<ul>
+<li>Lorem ipsum dolor sit amet.</li>
+<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+</ul>
+</div>
+<div class="cardFooter">
+<h2>€200</h2>
+</div>
+</div>
+
+</div>
+
+<main>
+<div class="leftCol">
+<h2>Welcome</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iusto aliquam nemo corrupti expedita non vitae quibusdam adipisci! Repellat facilis reprehenderit voluptatum, sed deserunt in nobis magni consequuntur autem similique.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda obcaecati sunt quibusdam pariatur dolore, sed modi doloribus voluptatem. Tenetur ullam soluta inventore amet maiores odio eos omnis dolorem? Doloribus, debitis?</p>
+<p>Fugit illum corrupti sint error unde dignissimos eos magnam nostrum, placeat iure adipisci corporis nesciunt fugiat consectetur nam rem eligendi magni architecto at saepe amet. Doloribus porro unde odio voluptate.</p>
+<p>Alias incidunt magnam perspiciatis minima voluptates, amet ut dolor quaerat maiores tenetur. Quaerat dolor, iusto est, quam repellendus necessitatibus inventore, adipisci consequatur voluptatum odit ducimus quos? Harum soluta amet autem?</p>
+<p>Expedita alias sunt facilis itaque officia eligendi, modi qui totam assumenda animi eaque perspiciatis recusandae rem ipsa molestias! Ab at architecto, laudantium debitis vero eligendi possimus iusto itaque doloribus voluptatem.</p>
+<p>Dolores dolorem officia quos, veritatis rem consectetur sed nihil magnam expedita assumenda qui odit aperiam eligendi, quia modi repudiandae quis consequatur placeat? Nisi quis nostrum consequuntur veritatis modi facilis ducimus.</p>
+</div>
+<div class="rightCol">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dicta tempore itaque consequuntur. Aut at molestiae eos cupiditate ducimus. Deleniti ipsam possimus impedit architecto distinctio amet dolorum incidunt eius cumque.</p>
+</div>
+
+<ul class="tabs" role="tablist">
+    <li>
+        <input type="radio" name="tabs" id="tab1" checked />
+        <label for="tab1" 
+               role="tab" 
+               aria-selected="true" 
+               aria-controls="panel1" 
+               tabindex="0">Description</label>
+        <div id="tab-content1" 
+             class="tab-content" 
+             role="tabpanel" 
+             aria-labelledby="description" 
+             aria-hidden="false">
+          <p>Your Content Goes here...</p>
+        </div>
+    </li>
+  
+    <li>
+        <input type="radio" name="tabs" id="tab2" />
+        <label for="tab2"
+               role="tab" 
+               aria-selected="false" 
+               aria-controls="panel2" 
+               tabindex="0">Specification</label>
+        <div id="tab-content2" 
+             class="tab-content"
+             role="tabpanel" 
+             aria-labelledby="specification" 
+             aria-hidden="true">
+          <p>Your Content Goes here...</p>
+        </div>
+    </li>
+</ul>
+<style>
+    /* CSS CODE the album class code is in bold. */
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  text-align: left;
+  font-family: Lato;
+  color: #fff;
+  background: #9b59b6;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  float: left;
+  margin: 20px 0 100px 10px;
+}
+h1 span {
+  font-size: 13px;
+  display: block;
+  padding-left: 4px;
+}
+
+.tabs {
+  width: 650px;
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+  text-align: left;
+}
+.tabs li {
+  float: left;
+  display: block;
+}
+.tabs input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+.tabs label {
+  display: block;
+  padding: 14px 21px;
+  border-radius: 2px 2px 0 0;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #8e44ad;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tabs label:hover {
+  background: #703688;
+}
+.tabs .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 25px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  background: #612e76;
+}
+.tabs [id^="tab"]:checked + label {
+  top: 0;
+  padding-top: 17px;
+  background: #612e76;
+}
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}
+
+p.link {
+  clear: both;
+  margin: 380px 0 0 15px;
+}
+p.link a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #612e76;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+p.link a:hover {
+  background-color: #522764;
+}
+p {
+margin-block: 1rem;
+}
+
+p, h1, h2, h3, h4 {
+padding-inline: 1rem ;
+line-height: 1.6;
+}
+
+body {
+background-color: black;
+color: white;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+
+header {
+grid-area: header;
+background-image: url(../images/trees.webp);
+background-size: cover;
+height: 50svh;
+display: grid;
+place-content: center;
+text-align: center;
+}
+
+main {
+width: min(100% - 4rem, 100ch);
+margin-inline: auto ;
+grid-area: main;
+}
+
+footer {
+background-color: white;
+color: black;
+grid-area: foot;
+}
+
+nav {
+grid-area: nav;
+position: sticky;
+top: 0;
+
+& a {
+text-align: center;
+text-decoration: none;
+background-color: white;
+color: black;
+padding: 1rem;
+display: block;
+text-align: center;
+}
+
+& li {
+list-style: none;
+}
+
+& a:hover {
+background-color: darkgreen;
+color: white;
+}
+
+& ul {
+display: flex;
+}
+& li {
+flex: 1;
+}
+
+#hamburgerCheck, .hamburger {
+display: none;
+}
+@media (width < 900px) {
+& ul {
+flex-direction: column;
+position: fixed;
+top: 50px;
+left: -100vw;
+width: 100vw;
+z-index: 20;
+transition: left 300ms ease-in-out;
+}
+#hamburgerCheck:checked ~ul {
+left: 0;
+}
+.hamburger {
+font-size: 2rem;
+background-color: orangered;
+display: block;
+position: fixed;
+top: 0;
+width: 100%;
+}
+}
+}
+
+.album {
+width: min(100% - 4rem, 1000px);
+margin-inline: auto;
+background-color: white;
+color: black;
+grid-area: album;
+padding: 1rem;
+margin-block: 3rem;
+display: grid;
+gap: 1rem;
+grid-auto-rows: 150px auto 100px;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.card {
+background-color: lightgrey;
+border: solid thin black;
+display: grid;
+grid-template-rows: subgrid;
+grid-row: span 3;
+}
+
+.cardText {
+padding-inline: 2rem;
+}
+
+.cardFooter {
+background-color: goldenrod;
+display: grid;
+place-items: center;
+}
+
+.cardImage img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+}
+
+
+
+@media screen and (width > 900px) {
+.container {
+display: grid;
+grid-template-areas:
+"header"
+"nav"
+"album"
+"main"
+"foot";
+}
+
+main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+}
+</style>
+</main>
+</div>
+</body>
+</html>
