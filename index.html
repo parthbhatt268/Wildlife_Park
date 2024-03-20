@@ -14,28 +14,98 @@
       <input type="checkbox" id="hamburgerCheck" class="hamburger-menu">
       <label for="hamburgerCheck" class="hamburger"><i class="fas fa-bars"></i></label>
       <ul class="nav-links">
-        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="#"><i class="fas fa-paw"></i> Animals</a></li>
-        <li><a href="#"><i class="fas fa-bicycle"></i> Activity</a></li>
-        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Maps</a></li>
-        <li><a href="#"><i class="fas fa-donate"></i> Donation</a></li>
+        <li class="logo">
+          <a href="#home">
+            <img src="Images/Logo.png" alt="Logo" class="logo-image">
+          </a>
+        </li>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#animals"><i id="fas fa-paw" class="fas fa-paw"></i> Animals</a></li>
+        <li><a href="#activity"><i class="fas fa-bicycle"></i> Activity</a></li>
+        <li><a href="#map"><i class="fas fa-map-marker-alt"></i> Maps</a></li>
+        <li><a href="#donation"><i class="fas fa-donate"></i> Donation</a></li>
       </ul>
     </div>
   </nav>
-  
+
 
   <!-- Parallax Image Section -->
-  <section class="parallax">
-    <div class="container">
-      <h1>Welcome to Our Website</h1>
+  <section  id="home"  class="home-section">
+  <div class="facetitle-container">
+    <p></p>
+    <b class="large-text">The Amuay</b>
+    <b class="large-text">Wildlife Park</b>
+  </div>
+  <div>
+    <a href="#" class="explore-btn">Let's Explore!</a>
+  </div>
+</section>
+
+
+<section id="animals" class="animals-section">
+  <div class="card">
+    <div class="tab-container">
+      <a href="#tab1" class="tab">Tab 1</a>
+      <a href="#tab2" class="tab">Tab 2</a>
     </div>
-  </section>
+    <div class="card-content">
+      <div id="tab1" class="tab-content1" >
+        <p>Content for Tab 1</p>
+      </div>
+      <div id="tab2" class="tab-content2">
+        <p>Content for Tab 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="activity" class="activity-section">
+  <span class="activity-title"><b>Park Activities</b></span>
+  <div class="card-activity">
+    <div class="card-activity-content">
+      <div class="activity-tile">
+        <img src="Images/Activity One Jeep Ride.jpg" alt="Image 1">
+        <div class="description">
+          <span class="activity-title-1"><b>Safari Jeep Ride</b></span>
+          <p><b>A thrilling 3-hour jeep adventure, tarversing every hidden nook of the jungle to encounter its vibrant wildlife up close!</b></p>
+        </div>
+      </div>
+      <div class="activity-tile">
+        <img src="Images/Activity Two Feeding.png" alt="Image 2">
+        <div class="description">
+          <span class="activity-title-2"><b>Interactive Feeding</b></span>
+          <p><b>Experience a hands-on feeding session with our animals at the zoo! Assist our keepers, learn their diets, behaviors, and conservation, all while getting up close with our amazing creatures!</b></p>
+        </div>
+      </div>
+      <!-- Add more tiles here -->
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="map" class="map-section">
+  <h2>Map Section</h2>
+
+
+</section>
+
+
+<section id="donation" class="donation-section">
+  <h2>Donation Section</h2>
+
+
+</section>
+
 
   <!-- Footer -->
-  <footer>
+  <!-- <footer>
     <div class="container">
       <p>This is the footer</p>
     </div>
-  </footer>
+  </footer> -->
 </body>
 </html>
+
+

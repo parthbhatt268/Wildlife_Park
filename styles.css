@@ -1,11 +1,12 @@
-/* CSS CODE for the hamburger menu */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
 @import url("https://fonts.googleapis.com/css?family=Lato");
+
 
 body {
   padding: 20px;
@@ -14,6 +15,7 @@ body {
   color: #fff;
   background: #9b59b6;
 }
+
 
 h1 {
   font-weight: normal;
@@ -24,10 +26,12 @@ h1 {
   margin: 20px 0 100px 10px;
 }
 
+
 h1 span {
   font-size: 13px;
   display: block;
 }
+
 
 .tabs {
   width: 650px;
@@ -38,16 +42,19 @@ h1 span {
   text-align: left;
 }
 
+
 .tabs li {
   float: left;
   display: block;
 }
+
 
 .tabs input[type="radio"] {
   position: absolute;
   top: 0;
   left: -9999px;
 }
+
 
 .tabs label {
   display: block;
@@ -66,9 +73,11 @@ h1 span {
   transition: all 0.2s ease-in-out;
 }
 
+
 .tabs label:hover {
   background: #703688;
 }
+
 
 .tabs .tab-content {
   z-index: 2;
@@ -84,20 +93,24 @@ h1 span {
   background: #612e76;
 }
 
+
 .tabs [id^="tab"]:checked + label {
   top: 0;
   padding-top: 17px;
   background: #612e76;
 }
 
+
 .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
 }
+
 
 p.link {
   clear: both;
   margin: 380px 0 0 15px;
 }
+
 
 p.link a {
   text-transform: uppercase;
@@ -113,13 +126,16 @@ p.link a {
   transition: all 0.2s ease-in;
 }
 
+
 p.link a:hover {
   background-color: #522764;
 }
 
+
 p {
   margin-block: 1rem;
 }
+
 
 p,
 h1,
@@ -130,16 +146,29 @@ h4 {
   line-height: 1.6;
 }
 
+
 body {
+  background-image: url('Images/Home.png');
+ 
+  /* Full height */
+  height: 100%;
+ 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: black;
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 img {
   max-width: 100%;
   display: block;
 }
+
 
 header {
   grid-area: header;
@@ -151,11 +180,13 @@ header {
   text-align: center;
 }
 
+
 main {
   width: min(100% - 4rem, 100ch);
   margin-inline: auto;
   grid-area: main;
 }
+
 
 footer {
   background-color: white;
@@ -167,12 +198,21 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
+.sticky-nav {
+  background-color: rgba(56, 52, 52, 0.5);  /* Change this to your desired background color */
+  padding: 4px 0;
+}
+/* .container {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+} */
 nav {
   grid-area: nav;
   position: sticky;
   top: 0;
 }
+
 
 nav a {
   text-align: center;
@@ -184,27 +224,25 @@ nav a {
   text-align: center;
 }
 
-nav li {
-  list-style: none;
-}
 
 nav a:hover {
   background-color: darkgreen;
   color: white;
 }
 
+
 nav ul {
   display: flex;
 }
 
-nav li {
-  flex: 1;
-}
+
+
 
 #hamburgerCheck,
 .hamburger {
   display: none;
 }
+
 
 @media (max-width: 900px) {
   nav ul {
@@ -218,9 +256,11 @@ nav li {
     background-color: aqua; /* Change background color */
   }
 
+
   #hamburgerCheck:checked ~ ul {
     left: 0;
   }
+
 
   .hamburger {
     display: block;
@@ -228,7 +268,223 @@ nav li {
     background-color: orangered;
     position: fixed;
     top: 0;
+    right: -20px;
     width: 100%;
     z-index: 21; /* Ensure hamburger button is on top of the menu */
   }
+}
+.nav-links li {
+  list-style: none;
+}
+
+
+.nav-links li a {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center items */
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+
+
+.nav-links li a i {
+  margin-right: 0.5rem; /* Add margin between icon and text */
+}
+.logo-image {
+  height: 1.3rem;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo {
+  margin-right: auto;
+}
+.large-text {
+  display: block;
+  font-size: 80px; /* Display as block elements */
+}
+
+
+.large-text:nth-child(2) {
+  margin-top: -1em; /* Adjust the margin to control the spacing between lines */
+}
+.home-section{
+  float: left;
+  position: relative;
+  top: 150px;
+}
+.explore-btn {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: rgb(123, 234, 123);
+  color: black;
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 13px; /* Adjust border radius for rounded corners */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Dark black margin */
+}
+
+
+.explore-btn:hover {
+  background-color: darkgreen; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+.home-section {
+  display: none;
+}
+.animals-section  {
+  display: none;
+}
+.activity-section {
+  display: none;
+}
+.map-section {
+  display: none;
+}
+.donation-section {
+  display: none;
+}
+
+
+.home-section:target {
+  display: block;
+}
+.animals-section:target {
+  display: block;
+  background-color: rgb(163, 163, 164);
+  height: 80vh;
+}
+
+
+.activity-section:target {
+  display: block;
+  background-color: white;
+  height: 80vh;
+}
+.map-section:target {
+  display: block;
+}
+.donation-section:target {
+  display: block;
+}
+.card {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-content {
+  padding: 20px;
+  overflow-y: auto;
+  height: 200px; /* Adjust as needed */
+}
+
+
+.tab-container {
+  display: flex;
+}
+
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+
+.tab:hover {
+  background-color: #e0e0e0;
+}
+
+
+.tab:focus {
+  outline: none;
+}
+
+
+.tab:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+.tab-content {
+  display: none;
+}
+
+
+.tab-content:target {
+  display: block;
+}
+
+
+.card-activity {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-activity-content {
+  padding: 20px;
+  overflow-y: auto;
+  height: 80vh; /* Adjust as needed */
+}
+.activity-title {
+  font-size: 40px;
+  margin-left: 1rem;
+  color: darkgreen;
+}
+.card-activity-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.activity-tile {
+  display: flex;
+  align-items: center;
+  height: 40%;
+  width: 90%;
+  border: 1px solid #000;
+  margin-top: 12px;
+  background-color: rgb(163, 163, 164);
+  border-radius: 5px;
+  padding: 5%;
+}
+
+
+.activity-tile img {
+  max-width: 10rem;
+  height: auto;
+  margin-right: 10px;
+}
+
+
+.description {
+  left: 20%;
+}
+.activity-title-1 {
+  color: darkgreen;
+  margin-left: 15px;
+  font-size: 30px;
+}
+.activity-title-2 {
+  color: darkgreen;
+  margin-left: 15px;
+  font-size: 30px;
 }
