@@ -164,12 +164,6 @@ body {
 }
 
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-
 header {
   grid-area: header;
   background-image: url(../images/trees.webp);
@@ -328,11 +322,34 @@ nav ul {
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Dark black margin */
 }
-
+.book-btn1 {
+  width: auto;
+  height: auto;
+  margin-left: 1rem;
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: rgb(123, 234, 123);
+  color: black;
+  font-size: 10px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 13px; /* Adjust border radius for rounded corners */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
+}
 
 .explore-btn:hover {
   background-color: darkgreen; /* Change background color on hover */
   color: white; /* Change text color on hover */
+}
+.book-btn1:hover {
+  background-color: darkgreen; /* Change background color on hover */
+  color: white;
+}
+.book-btn2:hover {
+  background-color: darkgreen; /* Change background color on hover */
+  color: white;
 }
 
 
@@ -366,7 +383,7 @@ nav ul {
 .activity-section:target {
   display: block;
   background-color: white;
-  height: 80vh;
+  height: 60%;
 }
 .map-section:target {
   display: block;
@@ -429,62 +446,183 @@ nav ul {
   display: block;
 }
 
-
-.card-activity {
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-.card-activity-content {
-  padding: 20px;
-  overflow-y: auto;
-  height: 80vh; /* Adjust as needed */
-}
-.activity-title {
-  font-size: 40px;
-  margin-left: 1rem;
+.title-activity-page {
   color: darkgreen;
-}
-.card-activity-content {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.activity-tile {
-  display: flex;
-  align-items: center;
-  height: 40%;
-  width: 90%;
-  border: 1px solid #000;
-  margin-top: 12px;
-  background-color: rgb(163, 163, 164);
-  border-radius: 5px;
-  padding: 5%;
+  font-size: larger;
+  font-weight: bold;
+  padding: initial;
 }
 
+@media only screen and (max-width: 600px) {
 
-.activity-tile img {
-  max-width: 10rem;
-  height: auto;
-  margin-right: 10px;
+  .description p {
+    font-size: 5%; /* Set a font size for the paragraph */
+    line-height: 1.5; /* Set line height for better readability */
+    margin-bottom: 20px; /* Add some space between paragraphs */
+    overflow: hidden; /* Hide any overflowing content */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+    display: -webkit-box; /* Set as a block element with multiple lines */
+    -webkit-line-clamp: 3; /* Limit the number of lines to 3 */
+    -webkit-box-orient: vertical; /* Set the orientation as vertical */
+  }
+  .activity-title p {
+    text-overflow: ellipsis; 
+  }
+  .card-activity {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-tile img {
+    height: 2rem;
+  }
+  .card-activity-content {
+    padding: 20px;
+    overflow-y: auto;
+    height: 94vh; /* Adjust as needed */
+  }
+  .activity-title {
+    margin-left: 1rem;
+    color: darkgreen;
+  }
+  .card-activity-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .activity-tile {
+    display: flex;
+    align-items: column;
+    height: 50%;
+    width: 90%;
+    border: 1px solid #000;
+    margin-top: 12px;
+    background-color: rgb(163, 163, 164);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .description {
+    left: 20%;
+    height: auto;
+    width: auto;
+  }
+  .activity-title {
+    color: darkgreen;
+    margin-left: 15px;
+  }
 }
+@media screen and (min-width: 1024px) {
+  .card-activity {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-activity-content {
+    padding: 20px;
+    overflow-y: auto;
+    height: 86vh; /* Adjust as needed */
+  }
+  .activity-title {
+    margin-left: 1rem;
+    color: darkgreen;
+  }
+  .card-activity-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .activity-tile {
+    display: flex;
+    align-items: column;
+    height: 50%;
+    width: 90%;
+    border: 1px solid #000;
+    margin-top: 12px;
+    background-color: rgb(163, 163, 164);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .description {
+    left: 20%;
+    height: auto;
+    width: auto;
+  }
+  .activity-title{
+    color: darkgreen;
+    margin-left: 15px;
+  }
+  
+}
+@media only screen and (max-width: 768px) {
 
-
-.description {
-  left: 20%;
-}
-.activity-title-1 {
-  color: darkgreen;
-  margin-left: 15px;
-  font-size: 30px;
-}
-.activity-title-2 {
-  color: darkgreen;
-  margin-left: 15px;
-  font-size: 30px;
+  .description p {
+    font-size: 5%; /* Set a font size for the paragraph */
+    line-height: 1.5; /* Set line height for better readability */
+    margin-bottom: 20px; /* Add some space between paragraphs */
+    overflow: hidden; /* Hide any overflowing content */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+    display: -webkit-box; /* Set as a block element with multiple lines */
+    -webkit-line-clamp: 3; /* Limit the number of lines to 3 */
+    -webkit-box-orient: vertical; /* Set the orientation as vertical */
+  }
+  .activity-title p {
+    text-overflow: ellipsis; 
+  }
+  .card-activity {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-tile img {
+    height: 2rem;
+  }
+  .card-activity-content {
+    padding: 20px;
+    overflow-y: auto;
+    height: 94vh; /* Adjust as needed */
+  }
+  .activity-title {
+    margin-left: 1rem;
+    color: darkgreen;
+  }
+  .card-activity-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .activity-tile {
+    display: flex;
+    align-items: column;
+    height: unset;
+    width: 90%;
+    border: 1px solid #000;
+    margin-top: 12px;
+    background-color: rgb(163, 163, 164);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .description {
+    left: 20%;
+    height: auto;
+    width: auto;
+  }
+  .activity-title {
+    color: darkgreen;
+    margin-left: 15px;
+  }
 }
