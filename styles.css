@@ -368,14 +368,21 @@ nav ul {
 .donation-section {
   display: none;
 }
-
+.animals-section2 {
+  display: none;
+}
 
 .home-section:target {
   display: block;
 }
 .animals-section:target {
   display: block;
-  background-color: rgb(163, 163, 164);
+  background-color: white;
+  height: 80vh;
+}
+.animals-section2:target {
+  display: block;
+  background-color: white;
   height: 80vh;
 }
 
@@ -403,7 +410,7 @@ nav ul {
 .card-content {
   padding: 20px;
   overflow-y: auto;
-  height: 200px; /* Adjust as needed */
+  height: 62vh; /* Adjust as needed */
 }
 
 
@@ -561,7 +568,11 @@ nav ul {
     color: darkgreen;
     margin-left: 15px;
   }
-  
+  /* .activity-title2 {
+    float: right;
+    margin-right: 2rem;
+    color: darkgreen;
+  } */
 }
 @media only screen and (max-width: 768px) {
 
@@ -626,3 +637,14 @@ nav ul {
     margin-left: 15px;
   }
 }
+.pics-card-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.pics-card-content img {
+  width: 100%;
+  height: auto;
+}
+
