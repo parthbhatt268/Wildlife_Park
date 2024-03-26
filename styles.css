@@ -194,7 +194,7 @@ footer {
 }
 .sticky-nav {
   background-color: rgba(56, 52, 52, 0.5);  /* Change this to your desired background color */
-  padding: 4px 0;
+  margin: -20px -16px;
 }
 /* .container {
   display: flex;
@@ -211,7 +211,7 @@ nav {
 nav a {
   text-align: center;
   text-decoration: none;
-  background-color: white;
+  background-color: transparent;
   color: black;
   padding: 1rem;
   display: block;
@@ -242,12 +242,13 @@ nav ul {
   nav ul {
     flex-direction: column;
     position: fixed;
-    top: 50px;
+    top: 37px;
     left: -100vw;
     width: 100vw;
-    z-index: 20;
+    z-index: 220;
     transition: left 300ms ease-in;
-    background-color: aqua; /* Change background color */
+    background-color: rgba(39, 32, 32, 0.902);  /* Change this to your desired background color */
+
   }
 
 
@@ -259,16 +260,19 @@ nav ul {
   .hamburger {
     display: block;
     font-size: 24px;
-    background-color: orangered;
+    background-color:rgba(56, 52, 52, 0.5);  /* Change this to your desired background color */    ;
     position: fixed;
     top: 0;
-    right: -20px;
+    padding-left: 10px;
+    margin-left: -5px;
     width: 100%;
-    z-index: 21; /* Ensure hamburger button is on top of the menu */
+    height: 6%;
+    z-index: 20; /* Ensure hamburger button is on top of the menu */
   }
 }
 .nav-links li {
   list-style: none;
+  /* width: 30%; */
 }
 
 
@@ -276,7 +280,7 @@ nav ul {
   display: flex; /* Use flexbox */
   align-items: center; /* Vertically center items */
   text-decoration: none;
-  color: black;
+  color: White;
   padding: 1rem;
 }
 
@@ -307,7 +311,8 @@ nav ul {
 .home-section{
   float: left;
   position: relative;
-  top: 150px;
+  top: 100px;
+  z-index: -1;
 }
 .explore-btn {
   display: inline-block;
@@ -723,6 +728,9 @@ nav ul {
         font-weight: bold;
     }
 
+    .logo {
+      display: none; /* Hide the logo on small screens */
+    }
 
 }
 @media screen and (min-width: 1024px) {
