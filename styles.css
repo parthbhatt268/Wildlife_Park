@@ -386,7 +386,6 @@ nav ul {
   height: 80vh;
 }
 
-
 .activity-section:target {
   display: block;
   background-color: white;
@@ -397,6 +396,69 @@ nav ul {
 }
 .donation-section:target {
   display: block;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  /* background-color: #e7c9a9; */
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.donation-section-container {
+  display: flex;
+  justify-content:space-between;
+}
+.donation-img {
+  height: 20rem;
+  margin-top: 10%;
+}
+.donation-card {
+  background-color: #fff;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    margin-top: 5%;
+}
+.donation-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(79, 83, 73);
+}
+.choose-amount {
+  color: black;
+  font-size: 10px;
+  margin: 2%;
+}
+.amount-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Wrap buttons to the next line if necessary */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.amount-button {
+    flex-basis: calc(20% - 10px); /* Adjust button width */
+    margin-bottom: 10px; /* Adjust button margin */
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #d5d5d2a8;
+    color: #000000;
+    cursor: pointer;
+}
+.donate-button {
+  display: block;
+  width: 15%;
+  margin-left: 42%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
 .card {
   width: 100%;
@@ -504,7 +566,58 @@ nav ul {
 }
 
 @media only screen and (max-width: 600px) {
+  .donation-section:target {
+    height: 90vh;
+    display: block;
 
+  }
+  .donation-img {
+    height: 11rem;
+  }
+  .donation-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+  }
+  .donation-card {
+    background-color: #fff;
+    width: 85%;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    margin-top: 5%;
+  }
+
+  .donation-header {
+    margin: 2%;
+    font-size: 20%;
+  }
+  .choose-amount {
+    color: black;
+    font-size: 10px;
+    margin: 2%;
+  }
+  .amount-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to the next line if necessary */
+    justify-content: space-between;
+    margin-bottom: auto;
+  }
+  .donate-button {
+    display: block;
+    width: 40%;
+    margin-left: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
   .description p {
     font-size: 5%; /* Set a font size for the paragraph */
     line-height: 1.5; /* Set line height for better readability */
