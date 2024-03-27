@@ -657,6 +657,10 @@ nav ul {
     margin-top: 5%;
   }
 
+  .tab-container {
+    display: flex;
+    margin-top: 40px;
+  }
   .donation-header {
     margin: 2%;
     font-size: 20%;
@@ -721,7 +725,14 @@ nav ul {
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
-
+  }
+  .card-activity-animals {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
   }
   
   .activity-tile img {
@@ -742,7 +753,15 @@ nav ul {
   }
   
   .custom-activity-tile {
+    display: flex;
     flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+  }
+  .image-disappear-left {
+    display: none;
+  }
+  .image-disappear-right {
+    display: block;
   }
 
   .custom-activity-tile img {
@@ -871,6 +890,10 @@ nav ul {
     align-items: center;
     height: 20%;
   }
+  .tab-container {
+    display: flex;
+    margin-top: 40px;
+  }
   .donation-card {
     background-color: #fff;
     width: 85%;
@@ -930,6 +953,16 @@ nav ul {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
   }
+
+  .card-activity-animals {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+  }
+  
   .image-wrapper {
     width: 100%; /* Make image wrapper full width in mobile view */
   }
@@ -1013,7 +1046,12 @@ nav ul {
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
-
+.image-disappear-left {
+  display: block;
+}
+.image-disappear-right {
+  display: none;
+}
 .get-directions:hover {
     background-color: darkgreen;
 }
@@ -1047,6 +1085,17 @@ nav ul {
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    height:100vh;
+  }
+
+  .card-activity-animals {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    height:100vh;
   }
   
   .card-activity-content {
@@ -1069,6 +1118,12 @@ nav ul {
     font-size: 270%
   }
 
+  .image-disappear-left {
+    display: none;
+  }
+  .image-disappear-right {
+    display: block;
+  }
   .book-btn1 {
     width: 200px;
     height: 45px;
@@ -1087,6 +1142,10 @@ nav ul {
     margin-top: 20px
   }
   
+  .tab-container {
+    display: flex;
+    margin-top: 20px;
+  }
   
   .activity-tile {
     display: flex;
