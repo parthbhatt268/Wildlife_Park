@@ -183,15 +183,27 @@ main {
 
 
 footer {
-  background-color: white;
-  color: black;
+  background-color:black;
+  color:white;
   grid-area: foot;
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 20px 0;
+  padding: 5px 0;
   text-align: center;
+  height: 11%;
 }
+
+.footer .footer-info {
+  text-align: center;
+  /* Add styles for footer info if needed */
+}
+
+.footer-info p {
+  display: inline-flex; /* Display paragraphs inline */
+  margin-right: 20px; /* Add some space between paragraphs */
+}
+
 .sticky-nav {
   background-color: #040a05ed;  /* Change this to your desired background color */
   margin: -20px -16px;
