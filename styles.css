@@ -741,7 +741,15 @@ nav ul {
   }
   
   .custom-activity-tile {
+    display: flex;
     flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+  }
+  .image-disappear-left {
+    display: none;
+  }
+  .image-disappear-right {
+    display: block;
   }
 
   .custom-activity-tile img {
@@ -1012,7 +1020,12 @@ nav ul {
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
-
+.image-disappear-left {
+  display: block;
+}
+.image-disappear-right {
+  display: none;
+}
 .get-directions:hover {
     background-color: darkgreen;
 }
@@ -1068,6 +1081,12 @@ nav ul {
     font-size: 270%
   }
 
+  .image-disappear-left {
+    display: none;
+  }
+  .image-disappear-right {
+    display: block;
+  }
   .book-btn1 {
     width: 200px;
     height: 45px;
