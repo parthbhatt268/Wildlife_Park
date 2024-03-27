@@ -328,22 +328,7 @@ nav ul {
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Dark black margin */
 }
-.book-btn1 {
-  width: auto;
-  height: auto;
-  margin-left: 1rem;
-  display: inline-block;
-  padding: 10px 20px; /* Adjust padding as needed */
-  background-color: rgb(123, 234, 123);
-  color: black;
-  font-size: 10px; /* Adjust font size as needed */
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 13px; /* Adjust border radius for rounded corners */
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
-}
+
 
 .explore-btn:hover {
   background-color: darkgreen; /* Change background color on hover */
@@ -392,10 +377,29 @@ nav ul {
   height: 80vh;
 }
 
+.book-btn1 {
+  width: auto;
+  height: auto;
+  margin-left: 4rem;
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: rgb(123, 234, 123);
+  color: black;
+  font-size: 10px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 13px; /* Adjust border radius for rounded corners */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
+}
+
 .activity-section:target {
   display: block;
   background-color: white;
   height: 60%;
+  width: 100vw;
+  margin: -20px;
 }
 .map-section:target {
   display: block;
@@ -508,6 +512,10 @@ nav ul {
   outline: none;
 }
 
+.container-act {
+  width: 100%;
+}
+
 
 .tab:not(:last-child) {
   border-right: 1px solid #ccc;
@@ -517,15 +525,35 @@ nav ul {
 }
 
 
+
+.custom-activity-tile {
+  display: flex;
+}
+
+.custom-activity-tile img {
+  width: 200px; /* Adjust image width as needed */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+.custom-description {
+  width: calc(100% - 180px); /* Calculate description width based on image width */
+  padding-left: 20px; /* Add some space between image and description */
+  color: black;
+}
+
+
 .tab-content:target {
   display: block;
 }
 
 .title-activity-page {
   color: darkgreen;
-  font-size: larger;
+  font-size: 200%;
+  margin: 0px;
   font-weight: bold;
   padding: initial;
+  text-decoration: underline; /* Add underline to the text */
+
 }
 
 #map-container {
@@ -552,6 +580,22 @@ nav ul {
   background-color: darkgreen;
 }
 
+.image-wrapper {
+  width: 300px; /* Adjust image wrapper width for desktop view */
+}
+
+.custom-tile {
+  background-color: #ccc; /* Gray background color */
+  padding: 1%; /* Add some padding around the tile */
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.image-wrapper img {
+  width: 100%; /* Make image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px;
+}
 #contact-details {
   background-color: #d0f0c0;
   padding: 20px;
@@ -572,10 +616,27 @@ nav ul {
 }
 
 @media only screen and (max-width: 600px) {
+  .custom-activity-title {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 120%
+  }
+  
   .donation-section:target {
     height: 90vh;
     display: block;
 
+  }
+  .custom-description-text {
+    font-size: 48px; /* Adjust font size as needed */
+    padding-left: 2px;
+  }
+
+  .custom-tile {
+    background-color: #ccc; /* Gray background color */
+    padding: 3%; /* Add some padding around the tile */
+    border-radius: 15px;
+    margin: 5px;
   }
   .donation-img {
     height: 11rem;
@@ -634,6 +695,22 @@ nav ul {
     -webkit-line-clamp: 3; /* Limit the number of lines to 3 */
     -webkit-box-orient: vertical; /* Set the orientation as vertical */
   }
+  .book-btn1 {
+    width: auto;
+    height: auto;
+    margin-left: 4rem;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgb(123, 234, 123);
+    color: black;
+    font-size: 10px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 13px; /* Adjust border radius for rounded corners */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
+  }
   .activity-title p {
     text-overflow: ellipsis; 
   }
@@ -643,13 +720,15 @@ nav ul {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+
   }
   
   .activity-tile img {
     height: 2rem;
   }
   .card-activity-content {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     overflow-y: auto;
     height: 94vh; /* Adjust as needed */
   }
@@ -662,12 +741,26 @@ nav ul {
     flex-direction: column;
   }
   
+  .custom-activity-tile {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .custom-activity-tile img {
+    width: 100%; /* Make image full width in mobile view */
+    max-width: none; /* Remove max-width for mobile view */
+    margin-bottom: 10px; /* Add some space between image and description */
+  }
+
+  .custom-description {
+    width: 100%; /* Make description full width in mobile view */
+    padding-left: 0; /* Remove left padding for mobile view */
+  }
   
   .activity-tile {
     display: flex;
     align-items: column;
     height: 50%;
-    width: 90%;
+    width: 100%;
     border: 1px solid #000;
     margin-top: 12px;
     background-color: rgb(163, 163, 164);
@@ -733,105 +826,41 @@ nav ul {
       display: none; /* Hide the logo on small screens */
     }
 
-}
-@media screen and (min-width: 1024px) {
-  .card-activity {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+    .image-wrapper {
+      width: 100%; /* Make image wrapper full width in mobile view */
+    }
   
-  .card-activity-content {
-    padding: 20px;
-    overflow-y: auto;
-    height: 86vh; /* Adjust as needed */
-  }
-  .activity-title {
-    margin-left: 1rem;
-    color: darkgreen;
-  }
-  .card-activity-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
-  .activity-tile {
-    display: flex;
-    align-items: column;
-    height: 50%;
-    width: 90%;
-    border: 1px solid #000;
-    margin-top: 12px;
-    background-color: rgb(163, 163, 164);
-    border-radius: 5px;
-    padding: 1rem;
-  }
-  
-  .description {
-    left: 20%;
-    height: auto;
-    width: auto;
-  }
-  .activity-title{
-    color: darkgreen;
-    margin-left: 15px;
-  }
-  /* .activity-title2 {
-    float: right;
-    margin-right: 2rem;
-    color: darkgreen;
-  } */
-  #map-container {
-    text-align: center;
+    .image-wrapper img {
+      width: 100%; /* Make image fill its container */
+      max-width: none; /* Remove max-width for mobile view */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .custom-description-text {
+      font-size: 13px; /* Adjust font size as needed */
+      padding-left: 2px;
+    }
 }
 
-.get-directions {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0 0 0;
-    background-color: rgb(123, 234, 123);
-    color: black;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 13px;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-}
-
-.get-directions:hover {
-    background-color: darkgreen;
-}
-
-#contact-details {
-    background-color: #d0f0c0;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    height: auto;
-    width: 60%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid black;
-    color: darkgreen;
-}
-
-#address {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-}
 @media only screen and (max-width: 768px) {
   .donation-section:target {
     height: 90vh;
     display: block;
-
+  }
+  .custom-activity-title {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 180%
+  }
+  
+  .custom-description-text {
+    font-size: 13px; /* Adjust font size as needed */
+    padding-left: 2px;
+  }
+  .custom-tile {
+    background-color: #ccc; /* Gray background color */
+    padding: 3%; /* Add some padding around the tile */
+    border-radius: 15px;
+    margin: 5px;
   }
   .donation-img {
     height: 11rem;
@@ -899,13 +928,23 @@ nav ul {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+  .image-wrapper {
+    width: 100%; /* Make image wrapper full width in mobile view */
+  }
+
+  .image-wrapper img {
+    width: 100%; /* Make image fill its container */
+    max-width: none; /* Remove max-width for mobile view */
+    height: auto; /* Maintain aspect ratio */
   }
   
   .activity-tile img {
     height: 2rem;
   }
   .card-activity-content {
-    padding: 20px;
+    padding: 0 20px 20px 20px;;
     overflow-y: auto;
     height: 94vh; /* Adjust as needed */
   }
@@ -917,13 +956,29 @@ nav ul {
     display: flex;
     flex-direction: column;
   }
+  .book-btn1 {
+    width: auto;
+    height: auto;
+    margin-left: 4rem;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgb(123, 234, 123);
+    color: black;
+    font-size: 10px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 13px; /* Adjust border radius for rounded corners */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
+  }
   
   
   .activity-tile {
     display: flex;
     align-items: column;
     height: unset;
-    width: 90%;
+    width: 100%;
     border: 1px solid #000;
     margin-top: 12px;
     background-color: rgb(163, 163, 164);
@@ -980,6 +1035,127 @@ nav ul {
 #address {
     margin-bottom: 10px;
     font-size: 18px;
+    font-weight: bold;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .card-activity {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .card-activity-content {
+    padding: 20px;
+    overflow-y: auto;
+    height: 86vh; /* Adjust as needed */
+  }
+  .activity-title {
+    margin-left: 1rem;
+    color: darkgreen;
+  }
+  .card-activity-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-activity-title {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 270%
+  }
+
+  .book-btn1 {
+    width: 200px;
+    height: 45px;
+    margin-left: 4rem;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgb(123, 234, 123);
+    color: black;
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 13px; /* Adjust border radius for rounded corners */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
+    margin-top: 20px
+  }
+  
+  
+  .activity-tile {
+    display: flex;
+    align-items: column;
+    height: 50%;
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 12px;
+    background-color: rgb(163, 163, 164);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .image-wrapper {
+    width: 500px; /* Adjust image wrapper width for medium screens */
+  }
+  .description {
+    left: 20%;
+    height: auto;
+    width: auto;
+  }
+  .activity-title{
+    color: darkgreen;
+    margin-left: 15px;
+  }
+  /* .activity-title2 {
+    float: right;
+    margin-right: 2rem;
+    color: darkgreen;
+  } */
+  #map-container {
+    text-align: center;
+}
+
+.get-directions {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    background-color: rgb(123, 234, 123);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 13px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.get-directions:hover {
+    background-color: darkgreen;
+}
+
+#contact-details {
+    background-color: #d0f0c0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: auto;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    color: darkgreen;
+}
+
+#address {
+    margin-bottom: 10px;
+    font-size: 20px;
     font-weight: bold;
 }
 }
