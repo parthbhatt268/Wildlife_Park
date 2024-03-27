@@ -193,7 +193,7 @@ footer {
   text-align: center;
 }
 .sticky-nav {
-  background-color: rgba(56, 52, 52, 0.5);  /* Change this to your desired background color */
+  background-color: #040a05ed;  /* Change this to your desired background color */
   margin: -20px -16px;
 }
 /* .container {
@@ -247,7 +247,7 @@ nav ul {
     width: 100vw;
     z-index: 220;
     transition: left 300ms ease-in;
-    background-color: rgba(39, 32, 32, 0.902);  /* Change this to your desired background color */
+    background-color: #040a05ed  /* Change this to your desired background color */
 
   }
 
@@ -256,11 +256,13 @@ nav ul {
     left: 0;
   }
 
-
+  .facetitle-container {
+    margin-top: 60px;
+  }
   .hamburger {
     display: block;
     font-size: 24px;
-    background-color:rgba(56, 52, 52, 0.5);  /* Change this to your desired background color */    ;
+    background-color:#040a05ed  /* Change this to your desired background color */    ;
     position: fixed;
     top: 0;
     padding-left: 10px;
@@ -403,6 +405,7 @@ nav ul {
 }
 .map-section:target {
   display: block;
+  margin: 55px;
 }
 .donation-section:target {
   display: block;
@@ -698,6 +701,16 @@ nav ul {
     display: -webkit-box; /* Set as a block element with multiple lines */
     -webkit-line-clamp: 3; /* Limit the number of lines to 3 */
     -webkit-box-orient: vertical; /* Set the orientation as vertical */
+  }
+
+  .large-text {
+    display: block;
+    font-size: 50px; /* Display as block elements */
+  }
+  
+  
+  .large-text:nth-child(2) {
+    margin-top: -1em; /* Adjust the margin to control the spacing between lines */
   }
   .book-btn1 {
     width: auto;
