@@ -376,6 +376,23 @@ nav ul {
   height: 80vh;
 }
 
+.book-btn1 {
+  width: auto;
+  height: auto;
+  margin-left: 4rem;
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: rgb(123, 234, 123);
+  color: black;
+  font-size: 10px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 13px; /* Adjust border radius for rounded corners */
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
+}
+
 .activity-section:target {
   display: block;
   background-color: white;
