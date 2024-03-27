@@ -315,6 +315,7 @@ nav ul {
   z-index: -1;
 }
 .explore-btn {
+  margin-top: 15%;
   display: inline-block;
   padding: 10px 20px; /* Adjust padding as needed */
   background-color: rgb(123, 234, 123);
