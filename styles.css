@@ -192,6 +192,11 @@ footer {
   padding: 5px 0;
   text-align: center;
   height: 11%;
+  margin-left: -20px;
+}
+
+.sticky-nav{
+  margin-left: -10px;
 }
 
 .footer .footer-info {
