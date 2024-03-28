@@ -459,7 +459,7 @@ nav ul {
 }
 .donate-button {
   display: block;
-  width: 15%;
+  width: 20%;
   margin-left: 42%;
   padding: 10px;
   border: none;
@@ -615,7 +615,529 @@ nav ul {
   font-weight: bold;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+  .ticketbook-section {
+    display: none;
+  }
+  .ticketbook-section:target {
+    display: block;
+    height: 84vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.449);
+  }
+  .table-container {
+    font-family: Arial, sans-serif;
+    font-size: small;
+    width: 20rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+   table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px;
+    color: #333;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .book-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-button:hover {
+    background-color: #45a049;
+  }
+  .animallineup-image {
+    height: 15rem;
+    width: 100%;
+    margin-top: 1%;
+    border-radius: 7px;
+  }
+
+  .donation-section:target {
+    height: 90vh;
+    display: block;
+  }
+  .custom-activity-title {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 180%
+  }
+  
+  .custom-description-text {
+    font-size: 13px; /* Adjust font size as needed */
+    padding-left: 2px;
+  }
+  .custom-tile {
+    background-color: #ccc; /* Gray background color */
+    padding: 3%; /* Add some padding around the tile */
+    border-radius: 15px;
+    margin: 5px;
+  }
+  .donation-img {
+    height: 11rem;
+  }
+  .donation-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+  }
+  .donation-card {
+    background-color: #fff;
+    width: 85%;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    margin-top: 5%;
+  }
+
+  .donation-header {
+    margin: 2%;
+    font-size: 90%;
+  }
+  .choose-amount {
+    color: black;
+    font-size: 10px;
+    margin: 2%;
+  }
+  .amount-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to the next line if necessary */
+    justify-content: space-between;
+    margin-bottom: auto;
+  }
+  .donate-button {
+    display: block;
+    width: 20%;
+    margin-left: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .description p {
+    font-size: 5%; /* Set a font size for the paragraph */
+    line-height: 1.5; /* Set line height for better readability */
+    margin-bottom: 20px; /* Add some space between paragraphs */
+    overflow: hidden; /* Hide any overflowing content */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+    display: -webkit-box; /* Set as a block element with multiple lines */
+    -webkit-line-clamp: 3; /* Limit the number of lines to 3 */
+    -webkit-box-orient: vertical; /* Set the orientation as vertical */
+  }
+  .activity-title p {
+    text-overflow: ellipsis; 
+  }
+  .card-activity {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+  .image-wrapper {
+    width: 100%; /* Make image wrapper full width in mobile view */
+  }
+
+  .image-wrapper img {
+    width: 100%; /* Make image fill its container */
+    max-width: none; /* Remove max-width for mobile view */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .activity-tile img {
+    height: 2rem;
+  }
+  .card-activity-content {
+    padding: 0 20px 20px 20px;;
+    overflow-y: auto;
+    height: 94vh; /* Adjust as needed */
+  }
+  .activity-title {
+    margin-left: 1rem;
+    color: darkgreen;
+  }
+  .card-activity-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .book-btn1 {
+    width: auto;
+    height: auto;
+    margin-left: 4rem;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgb(123, 234, 123);
+    color: black;
+    font-size: 10px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 13px; /* Adjust border radius for rounded corners */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
+  }
+  
+  
+  .activity-tile {
+    display: flex;
+    align-items: column;
+    height: unset;
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 12px;
+    background-color: rgb(163, 163, 164);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .description {
+    left: 20%;
+    height: auto;
+    width: auto;
+  }
+  .activity-title {
+    color: darkgreen;
+    margin-left: 15px;
+  }
+  #map-container {
+    text-align: center;
+}
+
+.get-directions {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    background-color: rgb(123, 234, 123);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 13px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.get-directions:hover {
+    background-color: darkgreen;
+}
+
+#contact-details {
+    background-color: #d0f0c0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: auto;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    color: darkgreen;
+}
+
+#address {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .ticketbook-section {
+    display: none;
+  }
+  .ticketbook-section:target {
+    display: block;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+  .table-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 1%;
+  }
+   table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px;
+    color: #333;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .book-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-button:hover {
+    background-color: #45a049;
+  }
+  .animallineup-image {
+    height: 15rem;
+    width: 100%;
+    margin-top: 1%;
+    border-radius: 7px;
+  }
+  .card-activity {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .card-activity-content {
+    padding: 20px;
+    overflow-y: auto;
+    height: 86vh; /* Adjust as needed */
+  }
+  .activity-title {
+    margin-left: 1rem;
+    color: darkgreen;
+  }
+  .card-activity-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-activity-title {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 270%
+  }
+
+  .book-btn1 {
+    width: 200px;
+    height: 45px;
+    margin-left: 4rem;
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgb(123, 234, 123);
+    color: black;
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 13px; /* Adjust border radius for rounded corners */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
+    margin-top: 20px
+  }
+  
+  
+  .activity-tile {
+    display: flex;
+    align-items: column;
+    height: 50%;
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 12px;
+    background-color: rgb(163, 163, 164);
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .image-wrapper {
+    width: 500px; /* Adjust image wrapper width for medium screens */
+  }
+  .description {
+    left: 20%;
+    height: auto;
+    width: auto;
+  }
+  .activity-title{
+    color: darkgreen;
+    margin-left: 15px;
+  }
+  /* .activity-title2 {
+    float: right;
+    margin-right: 2rem;
+    color: darkgreen;
+  } */
+  #map-container {
+    text-align: center;
+}
+
+.get-directions {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    background-color: rgb(123, 234, 123);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 13px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.get-directions:hover {
+    background-color: darkgreen;
+}
+
+#contact-details {
+    background-color: #d0f0c0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: auto;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    color: darkgreen;
+}
+
+#address {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+}
+
 @media only screen and (max-width: 600px) {
+  .ticketbook-section {
+    display: none;
+  }
+  .ticketbook-section:target {
+    display: block;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23%;
+    background-color: rgba(255, 255, 255, 0.449);
+  }
+  .table-container {
+    font-family: Arial, sans-serif;
+    font-size: smaller;
+    width: 20rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+   table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 20px;
+    color: #333;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .book-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-button:hover {
+    background-color: #45a049;
+  }
+  .animallineup-image {
+    height: 15rem;
+    width: 100%;
+    margin-top: 1%;
+    border-radius: 7px;
+  }
+
   .custom-activity-title {
     color: darkgreen;
     font-weight: bold;
@@ -840,325 +1362,6 @@ nav ul {
       padding-left: 2px;
     }
 }
-
-@media only screen and (max-width: 768px) {
-  .donation-section:target {
-    height: 90vh;
-    display: block;
-  }
-  .custom-activity-title {
-    color: darkgreen;
-    font-weight: bold;
-    font-size: 180%
-  }
-  
-  .custom-description-text {
-    font-size: 13px; /* Adjust font size as needed */
-    padding-left: 2px;
-  }
-  .custom-tile {
-    background-color: #ccc; /* Gray background color */
-    padding: 3%; /* Add some padding around the tile */
-    border-radius: 15px;
-    margin: 5px;
-  }
-  .donation-img {
-    height: 11rem;
-  }
-  .donation-section-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 20%;
-  }
-  .donation-card {
-    background-color: #fff;
-    width: 85%;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 50px auto;
-    margin-top: 5%;
-  }
-
-  .donation-header {
-    margin: 2%;
-    font-size: 90%;
-  }
-  .choose-amount {
-    color: black;
-    font-size: 10px;
-    margin: 2%;
-  }
-  .amount-buttons {
-    display: flex;
-    flex-wrap: wrap; /* Wrap buttons to the next line if necessary */
-    justify-content: space-between;
-    margin-bottom: auto;
-  }
-  .donate-button {
-    display: block;
-    width: 20%;
-    margin-left: 40%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #28a745;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .description p {
-    font-size: 5%; /* Set a font size for the paragraph */
-    line-height: 1.5; /* Set line height for better readability */
-    margin-bottom: 20px; /* Add some space between paragraphs */
-    overflow: hidden; /* Hide any overflowing content */
-    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
-    display: -webkit-box; /* Set as a block element with multiple lines */
-    -webkit-line-clamp: 3; /* Limit the number of lines to 3 */
-    -webkit-box-orient: vertical; /* Set the orientation as vertical */
-  }
-  .activity-title p {
-    text-overflow: ellipsis; 
-  }
-  .card-activity {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-  }
-  .image-wrapper {
-    width: 100%; /* Make image wrapper full width in mobile view */
-  }
-
-  .image-wrapper img {
-    width: 100%; /* Make image fill its container */
-    max-width: none; /* Remove max-width for mobile view */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .activity-tile img {
-    height: 2rem;
-  }
-  .card-activity-content {
-    padding: 0 20px 20px 20px;;
-    overflow-y: auto;
-    height: 94vh; /* Adjust as needed */
-  }
-  .activity-title {
-    margin-left: 1rem;
-    color: darkgreen;
-  }
-  .card-activity-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .book-btn1 {
-    width: auto;
-    height: auto;
-    margin-left: 4rem;
-    display: inline-block;
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: rgb(123, 234, 123);
-    color: black;
-    font-size: 10px; /* Adjust font size as needed */
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 13px; /* Adjust border radius for rounded corners */
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
-  }
-  
-  
-  .activity-tile {
-    display: flex;
-    align-items: column;
-    height: unset;
-    width: 100%;
-    border: 1px solid #000;
-    margin-top: 12px;
-    background-color: rgb(163, 163, 164);
-    border-radius: 5px;
-    padding: 1rem;
-  }
-  
-  .description {
-    left: 20%;
-    height: auto;
-    width: auto;
-  }
-  .activity-title {
-    color: darkgreen;
-    margin-left: 15px;
-  }
-  #map-container {
-    text-align: center;
-}
-
-.get-directions {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0 0 0;
-    background-color: rgb(123, 234, 123);
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 13px;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
-}
-
-.get-directions:hover {
-    background-color: darkgreen;
-}
-
-#contact-details {
-    background-color: #d0f0c0;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    height: auto;
-    width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid black;
-    color: darkgreen;
-}
-
-#address {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-}
-
-@media screen and (min-width: 1024px) {
-  .card-activity {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
-  
-  .card-activity-content {
-    padding: 20px;
-    overflow-y: auto;
-    height: 86vh; /* Adjust as needed */
-  }
-  .activity-title {
-    margin-left: 1rem;
-    color: darkgreen;
-  }
-  .card-activity-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .custom-activity-title {
-    color: darkgreen;
-    font-weight: bold;
-    font-size: 270%
-  }
-
-  .book-btn1 {
-    width: 200px;
-    height: 45px;
-    margin-left: 4rem;
-    display: inline-block;
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: rgb(123, 234, 123);
-    color: black;
-    font-size: 20px; /* Adjust font size as needed */
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 13px; /* Adjust border radius for rounded corners */
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3); /* Dark black margin */
-    margin-top: 20px
-  }
-  
-  
-  .activity-tile {
-    display: flex;
-    align-items: column;
-    height: 50%;
-    width: 100%;
-    border: 1px solid #000;
-    margin-top: 12px;
-    background-color: rgb(163, 163, 164);
-    border-radius: 5px;
-    padding: 1rem;
-  }
-  .image-wrapper {
-    width: 500px; /* Adjust image wrapper width for medium screens */
-  }
-  .description {
-    left: 20%;
-    height: auto;
-    width: auto;
-  }
-  .activity-title{
-    color: darkgreen;
-    margin-left: 15px;
-  }
-  /* .activity-title2 {
-    float: right;
-    margin-right: 2rem;
-    color: darkgreen;
-  } */
-  #map-container {
-    text-align: center;
-}
-
-.get-directions {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px 0 0 0;
-    background-color: rgb(123, 234, 123);
-    color: black;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 13px;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-}
-
-.get-directions:hover {
-    background-color: darkgreen;
-}
-
-#contact-details {
-    background-color: #d0f0c0;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    height: auto;
-    width: 60%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid black;
-    color: darkgreen;
-}
-
-#address {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-}
 .pics-card-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -1179,3 +1382,4 @@ iframe {
   width: 100%; /* Adjust video width to fit the screen */
   height: 315px; /* Adjust video height as needed */
 }
+
